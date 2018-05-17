@@ -27,12 +27,14 @@
     <p class = "credit">"Give me a four please." --Creator of this site</p>
     <script>
       var body_width = window.innerWidth || document.documentElement.clientWidth || document.body.clientWidth;
+      var body_height = window.innerHeight || document.documentElement.clientHeight || document.body.clientHeight;
+      
       for(var count = 0; count < document.getElementsByClassName("centeredtext").length; count = count + 1){
         document.getElementsByClassName("centeredtext")[count].style.marginLeft = String(body_width / 2 - 250).concat("px");
         document.getElementsByClassName("centeredtext")[count].style.width = String(0.75 * body_width).concat("px");
       }
       document.getElementById("credit").style.left = String(0.75 * body_width + 20).concat("px");
-      document.getElementById("credit").style.top = String(0.5 * body_width - 217).concat("px");
+      document.getElementById("credit").style.top = String(0.5 * body_height - 217).concat("px");
     </script>
   </body>
 </html>
